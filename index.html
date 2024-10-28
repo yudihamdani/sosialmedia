@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yudi Hamdani</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CDN Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <!-- Foto Profil -->
+        <img src="profile.png" alt="Foto Profil" class="profile-photo" />
+
+        <!-- Nama Profil -->
+        <h1 class="profile-name">Yudi Hamdani</h1>
+
+        <!-- Link YouTube -->
+        <a href="https://youtube.com/@YudiHamdani-pj3jx" class="link youtube" target="_blank"> <i data-feather="youtube"></i> YouTube </a>
+      </div>
+
+      <!-- Link Sosial Media -->
+      <div class="links">
+        <a href="https://instagram.com/yu_yud123" class="link" target="_blank"> <i data-feather="instagram"></i> Instagram </a>
+        <a href="https://twitter.com/@yudihamdani832" class="link" target="_blank"> <i data-feather="twitter"></i> Twitter </a>
+        <a href="https://www.linkedin.com/in/yudi-hamdani-a465b6335/" class="link" target="_blank"> <i data-feather="linkedin"></i> LinkedIn </a>
+        <a href="https://www.facebook.com/yudhi.hamdani.562" class="link" target="_blank"> <i data-feather="facebook"></i> Facebook </a>
+        <a href="https://github.com/YudiHamdani" class="link" target="_blank"> <i data-feather="github"></i> GitHub </a>
+      </div>
+    </div>
+
+    <!-- Aktifkan Feather Icons -->
+    <script>
+      feather.replace();
+
+      // JavaScript untuk animasi fade-in
+      window.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".link");
+        links.forEach((link, index) => {
+          // Tambahkan delay untuk setiap link
+          setTimeout(() => {
+            link.classList.add("fade-in");
+          }, index * 200); // Setiap link akan muncul dengan selisih waktu 200ms
+        });
+      });
+    </script>
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
